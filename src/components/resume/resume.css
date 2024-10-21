@@ -1,0 +1,141 @@
+ 
+
+.resume-section {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+   background: linear-gradient(135deg, rgba(0, 0, 0, 0.878), rgba(0, 0, 0, 0.8));
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.resume-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: white;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #8d762a;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Section Styling */
+.experience-section, .education-section {
+    margin-bottom: 40px;
+ 
+
+}
+
+.experience-section h2 {
+    font-size: 2rem;
+    color: white;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.education-section h2{
+    font-size: 2rem;
+    color: white;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+
+}
+
+/* Timeline Styling */
+.experience-timeline, .education-timeline {
+    position: relative;
+    margin-left: 20px;
+}
+
+.experience-item, .education-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.045);
+
+    
+    border-radius: 8px;
+ 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ 
+
+.experience-content, .education-content {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.experience-date, .education-date {
+    font-size: 0.9rem;
+    color: white;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color:#8d762a;
+}
+
+span {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Icons Styling */
+h2 svg {
+    color: #8d762a;
+    font-size: 1.5rem;
+}
+
+/* Timeline Line */
+.experience-timeline::before, .education-timeline::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #8d762a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
