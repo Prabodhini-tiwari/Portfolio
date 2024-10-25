@@ -1,20 +1,26 @@
 import './about.css';
 import { FaHtml5, FaCss3Alt, FaJava, FaJs, FaReact, FaGitAlt, FaDatabase } from 'react-icons/fa';
 import { SiTailwindcss, SiExpress } from "react-icons/si";
+import { useNavigate } from "react-router-dom";
 
 function About() {
 
-    const jsColor = {color:"yellow"}
-    const htmlColor = {color:"red"}
-    const cssColor = {color:"blue"}
-    const reactColor = {color:"skyblue"}
-    const tailColor = {color:"skyblue"}
-    const exColor ={color:"black"}
-    const gitColor = {color:"red"}
-    const sColor = {color:"gray"}
-    const javaColor = {color:"gold"}
+    const navigate = useNavigate();
+
+    const jsColor = { color: "yellow" }
+    const htmlColor = { color: "red" }
+    const cssColor = { color: "blue" }
+    const reactColor = { color: "skyblue" }
+    const tailColor = { color: "skyblue" }
+    const exColor = { color: "black" }
+    const gitColor = { color: "red" }
+    const sColor = { color: "gray" }
+    const javaColor = { color: "gold" }
     return (
         <section className="about-section">
+
+            <button className="back-button" onClick={() => navigate('/home')}>Back to Home</button>
+
             <h1>Learn More About Me</h1>
             <div className="AboveSection">
                 <div className="leftContent">
@@ -38,14 +44,14 @@ function About() {
             <div className="BelowSection">
                 <ul>
                     <li><FaHtml5 style={htmlColor} /> HTML5</li>
-                    <li><FaCss3Alt style={cssColor}/> CSS</li>
-                    <li><FaJs style={ jsColor  }/> JavaScript</li>
-                    <li><FaReact style={reactColor}/> React JS</li>
-                    <li><FaJava  style={javaColor}/> Java</li>
-                    <li><SiTailwindcss style={tailColor}/> Tailwind CSS</li>
+                    <li><FaCss3Alt style={cssColor} /> CSS</li>
+                    <li><FaJs style={jsColor} /> JavaScript</li>
+                    <li><FaReact style={reactColor} /> React JS</li>
+                    <li><FaJava style={javaColor} /> Java</li>
+                    <li><SiTailwindcss style={tailColor} /> Tailwind CSS</li>
                     <li><SiExpress style={exColor} /> Express JS</li>
                     <li><FaDatabase style={sColor} /> SQL</li>
-                    <li><FaGitAlt  style={gitColor }/> Git</li>
+                    <li><FaGitAlt style={gitColor} /> Git</li>
                 </ul>
             </div>
         </section>

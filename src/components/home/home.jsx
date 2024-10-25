@@ -1,37 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
 
 import './home.css'
 
 function Home() {
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
+    const toggleNav = () => {
+        setIsNavOpen(!isNavOpen);
+    };
+
     return (
         <div className="container">
             <h1>Prabodhini Tiwari</h1>
             <h2>I'm a Front End Developer</h2>
 
-            <nav id="navbar" className="navbar">
+            {/* Toggle Button */}
+            <button className="nav-toggle" onClick={toggleNav}>
+                {isNavOpen ? <FaTimes /> : <FaBars />}
+            </button>
+
+            <nav id="navbar" className={`navbar ${isNavOpen ? 'active' : ''}`}>
                 <ul>
                     <li>
-                        <Link to="/home">Home</Link>
+                        <Link to="/home" onClick={() => setIsNavOpen(false)}>Home</Link>
                     </li>
-
                     <li>
-                        <Link to="/About">About</Link>
+                        <Link to="/about" onClick={() => setIsNavOpen(false)}>About</Link>
                     </li>
-
                     <li>
-                        <Link to="/Resume">Resume</Link>
+                        <Link to="/resume" onClick={() => setIsNavOpen(false)}>Resume</Link>
                     </li>
-
                     <li>
-                        <Link to="/Projects">Projects</Link>
+                        <Link to="/projects" onClick={() => setIsNavOpen(false)}>Projects</Link>
                     </li>
-
                     <li>
-                        <Link to="/Contacts">Contacts</Link>
+                        <Link to="/contacts" onClick={() => setIsNavOpen(false)}>Contacts</Link>
                     </li>
-
                 </ul>
             </nav>
 
@@ -56,8 +62,6 @@ function Home() {
                     </li>
                 </ul>
             </div>
-
-
         </div>
     )
 }

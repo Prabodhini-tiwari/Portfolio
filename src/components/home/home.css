@@ -138,8 +138,8 @@ h2 {
 }
 
 .outer {
-    width: 60px; /* Increased size for better visibility */
-    height: 60px; /* Increased size for better visibility */
+    width: 50px; /* Increased size for better visibility */
+    height: 50px; /* Increased size for better visibility */
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
     border-radius: 50%; /* Keep it circular */
     display: flex; /* Use flexbox for centering content */
@@ -153,5 +153,28 @@ h2 {
      background:#7a601a ;
 }
 
+
+.nav-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+}
+
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar.active ul {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
  
  
