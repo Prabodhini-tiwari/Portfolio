@@ -143,9 +143,9 @@ h2 {
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
     border-radius: 50%; /* Keep it circular */
     display: flex; /* Use flexbox for centering content */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    backdrop-filter: blur(10px); /* Optional: adds a nice blur effect */
+    align-items: center;  
+    justify-content: center; 
+    backdrop-filter: blur(10px);  
   
 }
 

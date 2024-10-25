@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function About() {
 
-    const navigate = useNavigate();
+  
 
     const jsColor = { color: "yellow" }
     const htmlColor = { color: "red" }
@@ -19,7 +19,7 @@ function About() {
     return (
         <section className="about-section">
 
-            <button className="back-button" onClick={() => navigate('/home')}>Back to Home</button>
+ 
 
             <h1>Learn More About Me</h1>
             <div className="AboveSection">
