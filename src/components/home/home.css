@@ -6,7 +6,7 @@
     left: 0;
     max-width: 1200px;
     margin-left: 0px;
-   margin-top: 120px;
+    margin-top: 120px;
     padding: 20px;
     text-align: start;
     transform: translateY(10px);
@@ -114,10 +114,7 @@ h2 {
 
  
 
-.Social-links {
-    margin-top: 40px;
-     
-}
+ 
 
 .Social-links ul {
     list-style-type: none;
@@ -133,10 +130,28 @@ h2 {
 
 .Social-links ul li a {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #fff;
     padding: 10px;
     border-radius: 50%;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.outer {
+    width: 60px; /* Increased size for better visibility */
+    height: 60px; /* Increased size for better visibility */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 50%; /* Keep it circular */
+    display: flex; /* Use flexbox for centering content */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    backdrop-filter: blur(10px); /* Optional: adds a nice blur effect */
+  
+}
+
+.Social-links ul li a:hover .outer {
+     background:#7a601a ;
+}
+
+ 
  

@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaGithub,FaLinkedin  } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import './home.css'
 
-function Home(){
+function Home() {
     return (
         <div className="container">
             <h1>Prabodhini Tiwari</h1>
@@ -31,7 +31,7 @@ function Home(){
                     <li>
                         <Link to="/Contacts">Contacts</Link>
                     </li>
-                    
+
                 </ul>
             </nav>
 
@@ -41,14 +41,19 @@ function Home(){
             <div className="Social-links">
                 <ul>
                     <li>
-                        <a href="https://github.com/Prabodhini-tiwari"><FaGithub /></a>
+                        <a href="https://github.com/Prabodhini-tiwari" target="_blank" rel="noopener noreferrer">
+                            <div className="outer">
+                                <FaGithub />
+                            </div>
+                        </a>
                     </li>
-
                     <li>
-                        <a href="https://www.linkedin.com/in/prabodhini-tiwari-20a2a4178/"><FaLinkedin /></a>
+                        <a href="https://www.linkedin.com/in/prabodhini-tiwari-20a2a4178/" target="_blank" rel="noopener noreferrer">
+                            <div className="outer">
+                                <FaLinkedin />
+                            </div>
+                        </a>
                     </li>
-
-                     
                 </ul>
             </div>
 
