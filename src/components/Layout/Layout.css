@@ -112,3 +112,9 @@ main {
     }
 }
 
+@media (max-width: 768px) {
+    .layout-navbar ul {
+        display: none; /* Hide desktop navigation */
+    }
+}
+

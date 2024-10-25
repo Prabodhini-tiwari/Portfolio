@@ -69,8 +69,6 @@
     text-transform: capitalize;
 }
 
- 
-
 /* Demo Link Button */
 .demo-link {
     display: inline-block;
@@ -79,8 +77,7 @@
     background-color: #ad8e29;
     color: rgb(12, 11, 11);
     border-radius: 4px;
-    text-decoration: none;
-     
+    text-decoration: none;  
     transition: background-color 0.3s ease;
 }
 
@@ -91,12 +88,13 @@
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .project-list {
-        flex-direction: column;
+        flex-direction: column; /* Stack items vertically on small screens */
         gap: 30px;
     }
 
     .project-item {
-        width: 100%;
+        width: 90%; /* Full width for project items on small screens */
+        max-width: 350px; /* Limit max-width to keep them manageable */
     }
 
     .projects-container h2 {
@@ -111,11 +109,12 @@
 
 @media (max-width: 480px) {
     .projects-container h2 {
-        font-size: 1.5em;
+        font-size: 1.5em; /* Smaller heading for very small screens */
     }
 
     .project-item {
-        padding: 15px;
+        padding: 15px; /* Reduced padding for small screens */
+        width: 95%; /* Use nearly full width on very small screens */
     }
 
     .project-title {

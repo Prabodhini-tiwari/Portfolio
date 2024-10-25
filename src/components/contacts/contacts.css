@@ -111,16 +111,54 @@
 }
 
 /* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .containers h1 {
+        font-size: 2.2em; /* Slightly smaller for medium screens */
+    }
+}
+
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2em;
+    .containers h1 {
+        font-size: 2em; /* Smaller heading for tablets */
     }
 
-    p {
-        font-size: 1em;
+    .containers p {
+        font-size: 1em; /* Smaller paragraph for tablets */
     }
 
     .card {
-        width: 90%;
+        width: 90%; /* Full width for card on tablets */
+    }
+
+    .social-links ul {
+        flex-direction: column; /* Stack social icons vertically on small screens */
+        gap: 10px; /* Reduce gap for vertical layout */
+    }
+
+    .social-icon {
+        font-size: 2em; /* Smaller social icon size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .containers h1 {
+        font-size: 1.8em; /* Smaller heading for mobile */
+    }
+
+    .containers p {
+        font-size: 0.9em; /* Smaller paragraph for mobile */
+    }
+
+    .card {
+        padding: 15px; /* Reduce padding for mobile cards */
+        width: 95%; /* Use nearly full width on very small screens */
+    }
+
+    .social-icon {
+        font-size: 1.5em; /* Further reduce icon size for mobile */
+    }
+
+    .email-link {
+        font-size: 0.9em; /* Adjust email link font size */
     }
 }

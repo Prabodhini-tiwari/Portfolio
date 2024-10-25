@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
-
-import './home.css'
+import './home.css';
 
 function Home() {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -63,7 +62,7 @@ function Home() {
                 </ul>
             </div>
         </div>
-    )
+    );
 }
 
 export default Home;
