@@ -25,7 +25,7 @@ function About() {
             <h1>Learn More About Me</h1>
             <div className="AboveSection">
                 <div className="leftContent">
-                    <img src="src/assets/IMG-20240608-WA0065.jpg" alt="Profile" />
+                    <img src="./assets/IMG-20240608-WA0065.jpg" alt="Profile" />
                 </div>
                 <div className="rightContent">
                     <h3>UI / Front End Developer</h3>

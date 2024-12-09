@@ -30,17 +30,7 @@ function App() {
       </Routes>
     </BrowserRouter>
 
-
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path='/' element={<Home />} />
-    //     <Route path='/home' element={<Home />} />
-    //     <Route path='/about' element={<About />} />
-    //     <Route path='/resume' element={<Resume />} />
-    //     <Route path='/projects' element={<Projects />} />
-    //     <Route path='/contacts' element={<Contacts />} />
-    //   </Routes>
-    // </BrowserRouter>
+ 
 
   );
 }
