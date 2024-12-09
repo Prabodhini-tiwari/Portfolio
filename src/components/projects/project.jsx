@@ -1,6 +1,6 @@
 import React from "react";
 import "./project.css";
-import RecipeImage from '../../assets/RecipeImage.jpg';
+import RecipeImage from '/assets/RecipeImage.jpg';
 import PasswordGenratorImg from '../../assets/PasswordGenrator.jpg';
 import StopWatchImg from '../../assets/StopWatch.jpg';
 import ToDoImage from '../../assets/todoImg.jpg';
