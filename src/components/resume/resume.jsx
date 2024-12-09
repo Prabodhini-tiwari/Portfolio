@@ -1,3 +1,4 @@
+import React from 'react';
 import './resume.css';
 import { FaBriefcase, FaGraduationCap } from 'react-icons/fa'; // Icons for experience and education
 
