@@ -1,6 +1,10 @@
 import React from "react";
 import "./project.css"; 
- 
+import RecipeImage from "../../assets/RecipeImage.jpg"
+import PasswordGenerator from "../../assets/PasswordGenerator.jpg"
+import StopWatch from "../../assets/StopWatch.jpg"
+import todoImg from "../../assets/todoImg.jpg"
+
 
 const Projects = () => {
     return (
@@ -9,22 +13,22 @@ const Projects = () => {
                 <h2>Projects</h2>
                 <ul className="project-list">
                     <li className="project-item">
-                        <img src="/assets/RecipeImage.jpg" className="project-image" alt="Recipe Vault" />
+                        <img src={RecipeImage} className="project-image" alt="Recipe Vault" />
                         <h3 className="project-title">Recipe Vault</h3>
                         <a href="https://live-demo-recipe-vault.com" target="_blank" className="demo-link">Live Demo</a>
                     </li>
                     <li className="project-item">
-                        <img src="/assets/PasswordGenrator.jpg" className="project-image" alt="Password Generator" />
+                        <img src = {PasswordGenerator} className="project-image" alt="Password Genrator" />
                         <h3 className="project-title">Password Generator</h3>
                         <a href="https://live-demo-password-generator.com" target="_blank" className="demo-link">Live Demo</a>
                     </li>
                     <li className="project-item">
-                        <img src="/assets/StopWatch.jpg" className="project-image" alt="Stop Watch" />
+                        <img src={StopWatch} className="project-image" alt="Stop Watch" />
                         <h3 className="project-title">Stop Watch</h3>
                         <a href="https://live-demo-stopwatch.com" target="_blank" className="demo-link">Live Demo</a>
                     </li>
                     <li className="project-item">
-                        <img src="/assets/todoImg.jpg" className="project-image" alt="Todo App" />
+                        <img src={todoImg} className="project-image" alt="Todo App" />
                         <h3 className="project-title">Todo App</h3>
                         <a href="https://live-demo-todo-app.com" target="_blank" className="demo-link">Live Demo</a>
                     </li>

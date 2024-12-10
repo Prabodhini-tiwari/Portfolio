@@ -2,7 +2,7 @@ import React from 'react';
 import './about.css';
 import { FaHtml5, FaCss3Alt, FaJava, FaJs, FaReact, FaGitAlt, FaDatabase } from 'react-icons/fa';
 import { SiTailwindcss, SiExpress } from "react-icons/si";
- 
+import profile from "../../assets/profile.jpg" 
 
 function About() {
 
@@ -25,7 +25,7 @@ function About() {
             <h1>Learn More About Me</h1>
             <div className="AboveSection">
                 <div className="leftContent">
-                    <img src="./assets/IMG-20240608-WA0065.jpg" alt="Profile" />
+                    <img src={profile} alt="Profile" />
                 </div>
                 <div className="rightContent">
                     <h3>UI / Front End Developer</h3>
