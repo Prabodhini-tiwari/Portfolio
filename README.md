@@ -9,13 +9,14 @@ Welcome to my personal portfolio website! This is a showcase of my skills, proje
 https://prabodhini-tiwari.github.io/Portfolio/
 
 
-
-
- 
 🚀 Highlights
+
 (React+vite)
+
 Responsive Design: Optimized for mobile and desktop.
+
 Interactive UI: Clean, modern, and user-friendly experience.
+
 Tech Stack: React.js, Bootstrap, HTML, CSS, JavaScript.
 
 🛠️ How to Use
